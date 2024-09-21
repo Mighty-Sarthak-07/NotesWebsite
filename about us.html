@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="logo.png" type="image/icon type">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <a href="logo" class="logo"> <span>Sarthak </span>Kesarwani</a>
+            <ul class="nav">
+                <li><a href="about us.html" class="active">Home</a></li>
+                <li><a href="portfolio">Portfolio</a></li>
+                <li><a href="contact us">Contact Us</a></li>
+                <li><a href="Services">Services</a></li>
+            </ul>
+            <div class="menu">
+                INTRO
+                <div class="bx-menu" id="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            </div>
+        </header>
+        <section class="home">
+            <div class="htext">
+                <span>Software Developer</span>
+                <h1>Sarthak Kesarwani</h1>
+                <p>I'm Designer, Website Developer,
+                    <br>
+                    Graphic designer, and ocassionally Editor
+                </p>
+                <div class="mainbtn">
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#" class="btn">Hire me now</a>
+                </div>
+            </div>
+                <div class="homeimg">
+                    <img src="https://i.ibb.co/p25pfkY/s-jpg.jpg" alt="s-jpg" border="0">
+                </div>
+            
+        </section>
+    </div>
+    <div class="share">
+        <p>Check out My :</p>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/savage_sarthak_07?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/9779c610ff.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+       const toggleBtn = document.querySelector('#menu-icon')
+        const toggleBtnIcon = document.querySelector('.bx-menu i')
+        const droplet = document.getElementsByClassName('nav')
+
+        toggleBtnIcon.onclick = function () {
+            droplet.classList.toggle('open');
+        }
+       
+       const sr = ScrollReveal ({
+        distance : '40px',
+        duration : 2500,
+        reset : true
+       });
+       sr.reveal('.logo',{delay:200,origin:'left'});
+       sr.reveal('.nav',{delay:400,origin:'top'});
+       sr.reveal('.htext h1',{delay:600,origin:'left'});
+       sr.reveal('.htext span',{delay:500,origin:'top'});
+       sr.reveal('.share',{delay:700,origin:'bottom'});
+    </script>
+</body>
+
+</html>
